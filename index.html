@@ -119,7 +119,7 @@
             .attr("x", width - 5)
             .attr("y", 15);
 
-    d3.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSxbWxo4oVit-VJBfQiQ4-Hob408pOo479Jk0qcY8ZgiU9FufINKnMcExjXXh63YABOJo1O28vRSdIC/pub?gid=818793362&single=true&output=csv", function(error, data) {
+    d3.csv("data.csv", function(error, data) {
         var accessor = candlestick.accessor();
 
         data = data.slice(0, 200).map(function(d) {
